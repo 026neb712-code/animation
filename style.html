@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Opacity and Transition Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h3>1. opacity (Transparency Factors)</h3>
+    <div class="card op-solid">
+        opacity: 1<br>(100% Solid)
+    </div>
+    
+    <div class="card op-half">
+        opacity: 0.5<br>(50% Transparent)
+    </div>
+    
+    <div class="card op-invisible">
+        opacity: 0<br>(Invisible Box)
+    </div>
+    
+    <p style="margin-top: -10px; color: #666; font-family: Arial; padding-left: 15px;">
+        *Note: The third box is there, taking up physical layout space, but completely invisible!
+    </p>
+
+    <h3>2. transition (Hover Actions)</h3>
+    <p style="color: #666; font-family: Arial; padding-left: 15px; margin-bottom: 5px;">
+        Hover your mouse cursor over these boxes to see the smooth animations:
+    </p>
+    
+    <div class="card trans-all">
+        transition: all 0.3s ease;<br>
+        (Hover Me!)
+    </div>
+    
+    <div class="card trans-bg">
+        transition: background-color 1s linear;<br>
+        (Hover Me!)
+    </div>
+
+</body>
+</html>

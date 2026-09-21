@@ -1,0 +1,55 @@
+.card {
+    width: 100%;
+    max-width: 250px;
+    padding: 20px;
+    margin: 15px;
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background-color: #3b82f6; /* Default Blue */
+}
+
+/* ==========================================
+   1. opacity (Relative transparency layer)
+   ========================================== */
+/* 1 (Default): Completely solid and opaque */
+.op-solid {
+    opacity: 1;
+}
+
+/* 0.5: Semi-transparent (50% see-through) */
+.op-half {
+    opacity: 0.5;
+}
+
+/* 0: Completely invisible (Takes up layout space, but hidden from sight) */
+.op-invisible {
+    opacity: 0;
+}
+
+/* ==========================================
+   2. transition (Smooth state animations)
+   ========================================== */
+/* Animates ALL changing properties over 0.3 seconds with a smooth start/end acceleration */
+.trans-all {
+    transition: all 0.3s ease;
+}
+/* Trigger changes on hover */
+.trans-all:hover {
+    background-color: #10b981; /* Blue shifts to Green */
+    opacity: 0.5;              /* Fades down to 50% opacity */
+    transform: scale(1.05);    /* Slightly grows in size */
+}
+
+/* Animates ONLY background-color over 1 second at a constant, uniform speed */
+.trans-bg {
+    transition: background-color 1s linear;
+}
+/* Trigger changes on hover */
+.trans-bg:hover {
+    background-color: #ef4444; /* Blue shifts to Red slowly over 1s */
+    opacity: 0.5;              /* Oppacity drops INSTANTLY because it wasn't listed in transition */
+}
